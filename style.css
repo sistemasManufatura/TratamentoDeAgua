@@ -1,0 +1,650 @@
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 4vh;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        max-width: 9.375rem; 
+        z-index: 999;
+        padding: 0.625rem;
+    }
+    
+    .logo img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1.25rem; 
+    }
+    
+    h1 {
+        font-size: 1rem;
+        text-align: center;
+        background-color: #1fa03f;
+        color: #fff;
+        padding: 1.25rem 0; 
+        margin-bottom: 1.0rem; 
+        border-radius: 0.650rem;
+    }
+    
+    .tratamentoDeAgua {
+        background-color: #ffffff;
+        border-radius: 0.3125rem; 
+        padding: 1.25rem; 
+        box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.205); 
+        margin: 0 auto; 
+        margin-top: 8vh;
+    }
+    
+    .form-group {
+        margin-bottom: 1.25rem;    
+    }
+    
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="time"],
+    input[type="options"],
+    input[type="select"],
+    textarea {
+        width: 100%;
+        padding: 0.625rem; 
+        border: 0.0625rem solid #ccc; 
+        border-radius: 0.25rem; 
+        font-size: 1.100rem; 
+        margin-top: 0.3125rem; 
+        margin-bottom: 0.3125rem;
+    }
+    
+    label {
+		font-size: 1.000rem; 
+		font-weight: 500;
+
+	}
+    
+
+    .secador-checkbox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin: 2rem 0;
+        gap: 0.7rem;
+    }
+    
+
+
+    .secador-checkbox input[type="checkbox"] {
+        margin: 0.3125rem; 
+        width: 1.0rem; 
+        height: 1.0rem; 
+        cursor: pointer; 
+	    gap: 15px; 
+    }
+    
+    .date-time-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .date-time-container .form-group {
+        flex-basis: 48%;
+    }
+    
+    .etiquetasLavagem,
+    .campo-dinamico {
+        border: 0.125rem solid #ccc; 
+        padding: 0.625rem; 
+        border-radius: 0.25rem; 
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 1.25rem; 
+        margin-bottom: 3.125rem; 
+        box-shadow: 0 0 0.400rem rgba(0, 0, 0, 0.199); 
+    }
+    
+    
+    
+    .campos-dinamicos {
+        border: 0.125rem solid #ccc; 
+        padding: 0.625rem; 
+        border-radius: 0.25rem; 
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 1.25rem; 
+        margin-bottom: 3.125rem; 
+        box-shadow: 0 0 0.400rem rgba(0, 0, 0, 0.199); 
+    }
+    
+    .signature-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .btn-refazer-assinatura {
+        background-color: #ff6b6b;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem; 
+        padding: 0.625rem 1.25rem; 
+        font-size: 1rem; 
+        cursor: default;
+    }
+    
+    .btn-refazer-assinatura:hover {
+        background-color: #e04141;
+        transform: scale(1.05);
+    }
+    
+    .m-signature-pad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.625rem;
+        max-width: 18.75rem; 
+        margin: 0 auto;
+    }
+    
+    .m-signature-pad canvas {
+        border: 0.0625rem solid #ddd; 
+        width: 100%;
+        max-width: 17.5rem; 
+        height: auto;
+    }
+    
+    button#adicionarBatch {
+        background-color: #1fa03f;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem; 
+        padding: 0.625rem 1.25rem; 
+        font-size: 1rem; 
+        margin-top: 1.25rem; 
+        margin-right: 0.625rem; 
+    }
+    
+    button#iniciarSecagem {
+        background-color: #1fa03f;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem; 
+        padding: 0.625rem 1.25rem;
+        font-size: 1rem; 
+        margin-top: 1.25rem; 
+        display: none; 
+    }
+    
+    
+    select {
+        width: 100%;
+        padding: 0.625rem; 
+        font-size: 1rem; 
+        border: 0.0625rem solid #ccc; 
+        border-radius: 0.25rem;
+        background-color: #fff;
+        margin-top: 0.3125rem; 
+        margin-bottom: 0.625rem; 
+    }
+    
+    p {
+        font-size: 1.125rem; 
+        line-height: 1.5;
+        margin-bottom: 0.625rem; 
+    }
+    
+    h5 {
+        font-size: 1.25rem; 
+        font-weight: bold;
+        margin-bottom: 0.625rem; 
+    }
+    
+    
+    @media (max-width: 1030px) {
+        body {
+            padding: 4vw;
+        }
+    }
+
+    @media (max-width: 768px) {
+        body {
+            padding: 4vw;
+        }
+    
+        h1 {
+            font-size: 1.0em; 
+        }
+    
+        .form-group {
+            margin-bottom: 0.625rem; 
+        }
+    
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        textarea {
+            font-size: 0.875rem; 
+        }
+    
+        button {
+            font-size: 0.875rem; 
+        }
+    
+        .campo-dinamico,
+        .campos-dinamicos {
+            margin-top: 0.625rem; 
+            font-size: 0.875rem; 
+            }
+    
+        .campo-dinamico label,
+        .campo-dinamico p {
+            font-size: 0.875rem; 
+        }
+    
+        button#adicionarBatch,
+        button#iniciarSecagem {
+            font-size: 0.875rem; 
+            margin-top: 0.625rem;
+        }
+    
+    }
+    
+    @media (max-width: 480px) {
+
+    
+        h1 {
+            font-size: 0.5rem; 
+        }
+    
+        .m-signature-pad {
+            max-width: 12.5rem; 
+        }
+    
+    }
+    
+    .custom-text {
+        font-size: 18px;
+    }
+    
+    
+    @media (max-width: 768px) {
+        .custom-text {
+            font-size: 0.750rem; 
+        }
+    }
+    
+    
+
+    #finalizarButton,
+    #salvarEmXLXS,
+    #iniciarScan,
+    #salvarLote,
+    #salvarBatch,
+    #adicionarBatch,
+    #iniciarSecagem,
+    #generatePDF,
+    #exportButton {
+        background-color: #1fa03f;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.800rem 1.25rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1.25rem;
+        cursor: default;
+        transition: 0.3s;
+    }
+    
+    #avancar:hover, 
+    #retroceder:hover,
+    #salvarBatch:hover,
+    #salvarLote:hover,
+    #finalizarButton:hover,
+    #iniciarSecagem:hover,
+    #adicionarBatch:hover,
+    #generatePDF:hover,
+    #exportButton:hover {
+        transform: scale(1.05);
+        background-color: #168d3f; 
+        border: none;
+    }
+    
+    #avancar,
+    #retroceder,
+    #save, 
+    #load 
+    {
+		transition: 0.4s;
+	}
+    
+    
+    @media (max-width: 768px) {
+        .secador-checkbox {
+            align-items: center;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+        }
+    
+        .secador-checkbox input[type="checkbox"] {
+            margin: 0.3125rem; 
+            width: 1rem;
+            height: 1rem;
+        }
+    
+        .secador-checkbox label {
+            font-size: 0.875rem; 
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .secador-checkbox {
+            margin: 1rem 0;
+            padding: 0.5rem;
+        }
+    
+        .secador-checkbox input[type="checkbox"] {
+            width: 0.875rem;
+            height: 0.875rem;
+        }
+    
+        .secador-checkbox label {
+            font-size: 0.75rem; 
+        }
+    }
+
+.verTemp {
+	    background-color: #1fa03f;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.480rem 0.480rem;
+        font-size: 0.8rem;
+        cursor: pointer;
+        margin-top: 1.25rem;
+        cursor: default;
+        transition: 0.7s;
+}
+
+
+#quantidadeTotalEnvasadaSpan {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #1fa03f;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: block; 
+    margin: 0 auto; 
+    max-width: 300px; 
+    margin-bottom: 10px;
+}
+
+.item-obrigatorio {
+	color: rgb(251, 96, 96);
+}
+
+#sim-embalagens-insumos {
+	    background-color: #1fa03f;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.200rem 0.400rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1.25rem;
+        cursor: default;
+        transition: 0.7s;
+}
+
+
+
+#closeCamera {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(243, 84, 84);
+    color: #ddd;
+    padding: 10px;
+    z-index: 999;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.400rem 0.600rem;
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    cursor: default;
+    transition: 0.7s;
+}
+
+
+
+
+
+
+#assinaturaSupervisor,
+.maximizar-lote,
+.minimizar-lote {
+    background-color: #1fa03f;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.200rem 0.400rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    cursor: default;
+    transition: 0.7s;
+}
+
+
+
+.assinaturaSupervisorButton,
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-left: 0.500rem; 
+    margin-right: 0.500rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+span {
+    margin-bottom: 10px; /* Adicione a margem vertical desejada entre os elementos */
+  }
+  .botao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.botao {
+    padding: 7px 7px; /* Aumentei a margem horizontal para criar espaço entre os botões */
+    background-color: #1fa03f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 2rem; /* Adicionei margem direita para criar espaçamento entre os botões */
+}
+
+.botao:last-child {
+    margin-right: 0; /* Remove a margem direita do último botão para evitar excesso de espaçamento */
+}
+
+.botao:hover {
+    background-color: #136d31;
+}
+
+.botao-retroceder {
+    display: none;
+}
+
+.icone {
+    margin-right: 5px;
+}
+.checkbox-label {
+    pointer-events: none;
+}
+
+@media (max-width: 300px) {
+
+    
+    h1 {
+        font-size: 0.4rem; 
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+#startCamera, #copiarCodigos, #addManualEntry {
+	    background-color: #1fa03f;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.500rem 1.00rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        cursor: default;
+        transition: 0.7s;
+}
+
+#verificarConcentracaoCloro1, #verificarConcentracaoCloro2 {
+		background-color: #1fa03f;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.500rem 1.00rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-bottom: 1.25rem;
+        cursor: default;
+        transition: 0.7s;
+	
+	}
+
+
+/* Estilo hover para o botão Fechar Câmera */
+#closeCamera:hover {
+    background-color: darkred;
+}
+
+
+
+
+.custom-navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.nav-buttons-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .custom-navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-button {
+        margin: 5px;
+    }
+}
+  .navbar {
+	padding: 0.5rem 1rem; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 50px; 
+
+  }
+  
+  .navbar-brand img {
+   	max-height: 40px; /* Altura máxima do logo */
+  }
+
+
+  .report-text {
+    font-size: 0.8em; 
+    color: #555; 
+  }
+  
+
+  .navbar-text-smaller {
+    font-size: 1rem; /* Tamanho da fonte menor */
+  }
+  
+  #saveAlert {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ajuste o valor conforme necessário para garantir que esteja acima de outros elementos */
+    display: none;
+    text-align: center; /* Alinha o texto no centro */
+    max-width: 75rem; /* Defina a largura desejada */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+      .border-light-gray {
+        border-color: lightgray;
+    }
+
+
+
+    
